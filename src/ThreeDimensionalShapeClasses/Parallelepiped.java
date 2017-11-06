@@ -29,12 +29,14 @@ public class Parallelepiped extends Shape3D
     
     public double calculateSurfaceArea()
     {
-        return 0.0;
+        double area = 2 * (length*height + height*width + width*length);
+        return area;
     }
     
     public double calculateVolume()
     {
-        return 0.0;
+        double volume = length * height * width;
+        return volume;
     }
     
     @Override

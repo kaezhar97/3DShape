@@ -28,12 +28,15 @@ public class Cone extends Shape3D
     
     public double calculateSurfaceArea()
     {
+        double slant = Math.sqrt(radius*radius + height*height);
+        double area = Math.PI * radius * (radius + slant);
         return 0.0;
     }
     
     public double calculateVolume()
     {
-        return 0.0;
+        double volume = (Math.PI * radius * radius * height) / 3;
+        return volume;
     }
     
     @Override

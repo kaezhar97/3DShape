@@ -4,6 +4,7 @@ import ThreeDimensionalShapeClasses.Cylinder;
 import ThreeDimensionalShapeClasses.Parallelepiped;
 import ThreeDimensionalShapeClasses.Sphere;
 import ThreeDimensionalShapeClasses.Point3D;
+import ThreeDimensionalShapeClasses.Shape3D;
 
 
 
@@ -33,6 +34,15 @@ public class Shape3DTest
         
         center = new Point3D(-5, 2, -1);
         Cone cone = new Cone(center, 11, 14); 
+        
+        Shape3D[] arrayOfShapes = new Shape3D[] {sphere, box, cylinder, cone};
+        
+        for (int i=0; i<arrayOfShapes.length; i++)
+        {
+            System.out.println();
+        }
+        
+        
     }
     
    

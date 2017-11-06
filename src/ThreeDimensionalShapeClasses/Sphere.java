@@ -25,12 +25,14 @@ public class Sphere extends Shape3D
     
     public double calculateSurfaceArea()
     {
-        return 0.0;
+        double area= 4* Math.PI * radius * radius;
+        return area;
     }
     
     public double calculateVolume()
     {
-        return 0.0;
+        double volume = (4 * Math.PI * radius * radius *radius) / 3 ;
+        return volume;
     }
 
     @Override

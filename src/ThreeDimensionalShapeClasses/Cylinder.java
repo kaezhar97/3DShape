@@ -28,12 +28,14 @@ public class Cylinder extends Shape3D
     
     public double calculateSurfaceArea()
     {
-        return 0.0;
+        double area = 2 * (Math.PI*radius*height + Math.PI*radius*radius);
+        return area;
     }
     
     public double calculateVolume()
     {
-        return 0.0;
+        double volume = Math.PI * radius * radius * height;
+        return volume;
     }
     
     @Override
