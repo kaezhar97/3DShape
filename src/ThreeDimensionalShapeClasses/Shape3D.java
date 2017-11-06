@@ -16,16 +16,16 @@ public abstract class Shape3D implements Comparable
     
     public Shape3D(int x, int y, int z)
     {
-         center = new Point3D(x, y, z);
+         this.center = new Point3D(x, y, z);
     }
     
-    public double calculateDistanceFromTheOrigin(Point3D centerOfShape)
+    public double calculateDistanceFromTheOrigin()
     {
     
         //Obtaining coordinates from center of shape
-        int x = centerOfShape.getX();
-        int y = centerOfShape.getY();
-        int z = centerOfShape.getZ();
+        int x = this.center.getX();
+        int y = this.center.getY();
+        int z = this.center.getZ();
         
         //Squaring coordinates
         x=x*x;

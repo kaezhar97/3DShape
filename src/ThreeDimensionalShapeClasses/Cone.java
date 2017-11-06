@@ -21,7 +21,7 @@ public class Cone extends Shape3D
     {
         super(center.getX(), center.getY(), center.getZ());
         
-         center = new Point3D(center.getX(), center.getY(), center.getZ());
+         this.center = new Point3D(center.getX(), center.getY(), center.getZ());
          this.height = height;
          this.radius = radius;
     }
@@ -30,7 +30,7 @@ public class Cone extends Shape3D
     {
         double slant = Math.sqrt(radius*radius + height*height);
         double area = Math.PI * radius * (radius + slant);
-        return 0.0;
+        return area;
     }
     
     public double calculateVolume()
@@ -47,4 +47,6 @@ public class Cone extends Shape3D
                      "\n" +"radius: " + radius + 
                    "\n" +"height: " + height;
     }
+    
+  
 }

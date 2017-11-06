@@ -21,7 +21,7 @@ public class Parallelepiped extends Shape3D
     {
         super(center.getX(), center.getY(), center.getZ());
         
-        center = new Point3D(center.getX(), center.getY(), center.getZ());
+        this.center = new Point3D(center.getX(), center.getY(), center.getZ());
         this.length = length;
         this.width = width;
         this.height = height;
@@ -48,4 +48,6 @@ public class Parallelepiped extends Shape3D
                    "\n" +"width: "  + width + 
                    "\n" +"height: " + height;
     }
+    
+    
 }
