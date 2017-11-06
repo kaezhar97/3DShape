@@ -10,7 +10,7 @@ package ThreeDimensionalShapeClasses;
  *
  * @author Octavio
  */
-public abstract class Shape3D
+public abstract class Shape3D implements Comparable
 {
     private Point3D center;
     
@@ -43,5 +43,38 @@ public abstract class Shape3D
         
         return distance;
     }
+
+    @Override
+    public String toString()
+    {
+        return center.toString();
+    }
+    
+    public abstract double calculateSurfaceArea();
+    
+    public abstract double calculateVolume();
         
+    
+    public int compareTo(Object otherObject)
+    {
+        Shape3D otherShape = (Shape3D)otherObject;
+        
+        if (this.calculateVolume()<otherShape.calculateVolume())
+        {
+          return -1;  
+        }
+        
+        else if (this.calculateVolume()>otherShape.calculateVolume())
+        {
+            return 1;
+        }
+        
+        else
+        {
+            return 0;
+        }
+        
+        
+    }
+
 }
