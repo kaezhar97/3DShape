@@ -12,9 +12,18 @@ package ThreeDimensionalShapeClasses;
  */
 public class Cylinder extends Shape3D
 {
-    public Cylinder(Point3D center, double height, double radius)
+    
+    Point3D center;
+    double height;
+    double radius;
+    
+    public Cylinder(Point3D center, double radius, double height)
     {
         super(center.getX(), center.getY(), center.getZ());
+        
+         center = new Point3D(center.getX(), center.getY(), center.getZ());
+         this.height = height;
+         this.radius = radius;
     }
     
     public double calculateSurfaceArea()
@@ -25,5 +34,14 @@ public class Cylinder extends Shape3D
     public double calculateVolume()
     {
         return 0.0;
+    }
+    
+    @Override
+    public String toString()
+    {
+        return           "Cylinder "
+                + "\n" + "center: " + center.toString() + 
+                   "\n" +"radius: " + radius + 
+                   "\n" +"height: " + height;
     }
 }

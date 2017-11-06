@@ -42,7 +42,7 @@ public class Point3D
     @Override
     public String toString()
     {
-        return "coord("+ x + ", " + y + ", " + z + ")";
+        return "("+ x + ", " + y + ", " + z + ")";
     }
     
     
