@@ -17,9 +17,11 @@ public class Point3D
     private int y;
     private int z;
     
-    public Point3D()
+    public Point3D(int x, int y, int z)
     {
-        
+        this.x=x;
+        this.y=y;
+        this.z=z;
     }
 
     public int getX()
@@ -40,7 +42,7 @@ public class Point3D
     @Override
     public String toString()
     {
-        return "coord(" + "x=" + x + ", y=" + y + ", z=" + z + ")";
+        return "coord("+ x + ", " + y + ", " + z + ")";
     }
     
     
