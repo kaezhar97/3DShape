@@ -1,24 +1,36 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * File: Shape3D.java
+Purpose: An abstract class that simulates a general 3D shape
  */
 
 package ThreeDimensionalShapeClasses;
 
 /**
- *
- * @author Octavio
+ * A class that simulates a 3D shape
+ * 
+ * @author Octavio Avila-Cardet
  */
 public abstract class Shape3D implements Comparable
 {
-    private Point3D center;
+    private Point3D center; // the center coordinate of the 3D shape
     
+    /**
+     * Creates a 3D shape object
+     * 
+     * @param x the x coordinate
+     * @param y the y coordinate
+     * @param z the z coordinate
+     */
     public Shape3D(int x, int y, int z)
     {
          this.center = new Point3D(x, y, z);
     }
     
+    /**
+     * Calculates the distance of the shape from the origin
+     * 
+     * @return distance from the origin
+     */
     public double calculateDistanceFromTheOrigin()
     {
     
@@ -44,17 +56,37 @@ public abstract class Shape3D implements Comparable
         return distance;
     }
 
+    /**
+     * Displays the center of the shape
+     * 
+     * @return the center coordinate of the shape
+     */
     @Override
     public String toString()
     {
         return center.toString();
     }
     
+    /**
+     * An abstract method that calculates the surface area of the shape
+     * 
+     * @return the surface area of the shape
+     */
     public abstract double calculateSurfaceArea();
     
+    /**
+     * An abstract method that calculates the volume of the shape
+     * 
+     * @return the volume of the shape
+     */
     public abstract double calculateVolume();
         
-    
+    /**
+     * Compares one shape with another based on their volumes
+     * 
+     * @param otherObject the other shape
+     * @return the order in which the shapes should be ordered
+     */
     public int compareTo(Object otherObject)
     {
         Shape3D otherShape = (Shape3D)otherObject;

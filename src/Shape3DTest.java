@@ -11,14 +11,14 @@ import java.util.Arrays;
 
 
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * File: Shape3DTest.java
+Purpose: Tests the Shape3D and its implementations
  */
 
 /**
- *
- * @author Octavio
+ * Driver class for Shape3D
+ * 
+ * @author Octavio Avila-Cardet
  */
 public class Shape3DTest
 {

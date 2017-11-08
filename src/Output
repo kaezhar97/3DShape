@@ -1,0 +1,60 @@
+List of shapes
+--------------
+
+Sphere 
+center: (2, -8, 5)
+radius: 17.0
+surface area: 3631.6811075498013
+volume: 20579.526276115543
+
+Parallelepiped 
+center: (7, 2, 9)
+length: 37.0
+width: 12.0
+height: 9.0
+surface area: 1770.0
+volume: 3996.0
+
+Cylinder 
+center: (3, -4, 5)
+radius: 10.0
+height: 13.0
+surface area: 1445.132620651305
+volume: 4084.0704496667313
+
+Cone 
+center: (-5, 2, -1)
+radius: 11.0
+height: 14.0
+surface area: 995.4118477472169
+volume: 1773.9526517270363
+
+Sorted by volume (ascending order)
+----------------
+
+Cone
+volume: 1773.9526517270363
+
+Parallelepiped
+volume: 3996.0
+
+Cylinder
+volume: 4084.0704496667313
+
+Sphere
+volume: 20579.526276115543
+
+Sorted by distance from the origin (descending order)
+----------------
+
+Parallelepiped
+distance from origin: 11.575836902790225
+
+Sphere
+distance from origin: 9.643650760992955
+
+Cylinder
+distance from origin: 7.0710678118654755
+
+Cone
+distance from origin: 5.477225575051661
